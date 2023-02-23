@@ -1,23 +1,55 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesome } from '@fortawesome/react-fontawesome'
+import {
+  faCircleCheck, faPen, faTrashCan
+} from '@fortawesome/free-solid-svg-icons'
 import './App.css';
 
 function App() {
+
+  const [toDo, setToDo] = useState('');
+  //toDo will contain the temporary data that will be added to the list
+  
+  const [newTask, setNewTask] = useState('');
+  const [updateData, setUpdateData] = useState('');
+  //updateData will hold task that is being added 
+  
+  //Add a task
+  const addTask = () => {
+
+  }
+
+  //Delete a Task
+  const deleteTask = (id) =>{
+
+  }
+
+  //Mark task as done or completed
+  const markDone = (id) => {
+
+  }
+
+  //cancel update
+  const cancelUpdate = ()=> {
+
+  }
+
+  //change task for update
+  const changeTask = () => {
+    
+  }
+
+   //update task for update
+   const updateTask = () => {
+    
+   }
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container App">
+      <h2>To Do List App (ReactJS)</h2>
     </div>
   );
 }
